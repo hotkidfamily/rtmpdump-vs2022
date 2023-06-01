@@ -32,6 +32,10 @@
 #include "rtmp_sys.h"
 #include "log.h"
 
+#ifdef _MSC_VER	
+#pragma warning(disable: 4996)
+#endif
+
 #ifdef CRYPTO
 #ifdef USE_POLARSSL
 #include <polarssl/havege.h>

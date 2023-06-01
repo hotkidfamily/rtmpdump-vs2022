@@ -30,6 +30,10 @@
 #include "log.h"
 #include "http.h"
 
+#ifdef _MSC_VER	
+#pragma warning(disable: 4996)
+#endif
+
 #ifdef CRYPTO
 #ifdef USE_POLARSSL
 #include <polarssl/sha2.h>
